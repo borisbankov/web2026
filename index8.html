@@ -10,20 +10,41 @@
 	<form action="">
 		<fieldset>
 			<legend>Events Page</legend>
-
-			<label for="">Event Name:</label>
-			<br>
-			<input type="text" value="Multisport Gala 2021">
-			<br>
-			
-			<label for="">Sports:</label>
-			<br>
+			<div><label for="ev_name">Event Name:</label></div>
+			<input type="text" value="Multisport Gala 2021" id="ev_name">
+			<div>Sports:</div>
 			<select name="" id="">
 				<option value="">Baseball</option>
-				<option value="">asdasd ad as dsa </option>
+				<option value="">Ice Hockey</option>
 			</select>
-			<br>
-
+			<div>Location:</div>
+			<select name="" id="">
+				<option value="">1st Street</option>
+				<option value="">1st Main Street</option>
+			</select>
+			<div>Time:</div>
+			<input type="datetime-local" value="dd/mm/yyyy --:--:--">
+			<div>Number of players:</div>
+			<input type="number" placeholder="Insert number of players">
+			<div>Age:</div>
+			<input type="number" placeholder="Insert age">
+			<div>Minimum Skill Level:</div>
+			<input type="radio" name="min" value="1"> <label for="">1</label>
+			<input type="radio" name="min" value="2"> <label for="">2</label>
+			<input type="radio" name="min" value="3"> <label for="">3</label>
+			<input type="radio" name="min" value="4"> <label for="">4</label>
+			<input type="radio" name="min" value="5"> <label for="">5</label>
+			<div>Maximum Skill Level:</div>
+			<input type="radio" name="max" value="1"> <label for="">1</label>
+			<input type="radio" name="max" value="2"> <label for="">2</label>
+			<input type="radio" name="max" value="3"> <label for="">3</label>
+			<input type="radio" name="max" value="4"> <label for="">4</label>
+			<input type="radio" name="max" value="5"> <label for="">5</label>
+			<p></p>
+			<label for="">Creator: yjkimb</label>
+			<div>
+				<input type="submit" value="Send">
+			</div>
 		</fieldset>
 	</form>
 </body>
