@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<table>
+			<tr>
+				<th colspan="2"><h1>Novell Service Login</h1></th>
+			</tr>
+			<tr>
+				<td><label for="">Username:</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="">Password:</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="">City of <br>Employment:</label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Web server:</td>
+				<td>
+					<select name="" id="">
+						<option value="">--Choose a server--</option>
+						<option value="1" selected>NGINX</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Please specify <br>your role:</label></td>
+				<td>
+					<input type="radio" name="role" value="13"> 
+					<label for=""> Admin</label>
+					<br>
+					<input type="radio" name="role" value="14"> 
+					<label for=""> Engineer</label>
+					<br>
+					<input type="radio" name="role" value="15"> 
+					<label for=""> Manager</label>
+					<br>
+					<input type="radio" name="role" value="16"> 
+					<label for="">Guest</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Single Sign-on <br>to the following:</label></td>
+				<td>
+					<input type="hidden" value="0" name="confirm_mail">
+					<input type="checkbox" value="1" name="confirm_mail">
+					<label for="">Mail</label>
+					<br>
+					<input type="checkbox" value="1">
+					<label for="">Payroll</label>
+					<br>
+					<input type="checkbox" value="1">
+					<label for="">Self-service</label>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input type="submit" value="Login">
+					<input type="reset">
+				</th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
