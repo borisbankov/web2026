@@ -1,0 +1,29 @@
+.box {
+	display:inline-block;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left:5px;
+	width:118.4px;
+	box-sizing: border-box; 
+}
+.red {
+	background: #b90000;
+}
+.green {
+	background: #4c9c01;
+}
+.blue {
+	background: #0081cc;
+}
+.indigo {
+	background: #4902a7;
+}
+.yellow {
+	background: #f3e300;
+}
+.orange {
+	background: #ffa600;
+}
+div:nth-of-type(1){
+	margin-bottom: 2px;
+}
