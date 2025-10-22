@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+			width:1200px;
+			margin: 0 auto;
+		}
+		.main{
+			background: black;
+			padding:33px 33px 0px 33px;
+		}
+		.nav{
+			margin: 0px;
+			background: #999999;
+			list-style-type: none;
+			padding: 6px;
+		}
+		.nav-item{
+			display: inline-block;
+		}
+		.nav-link{
+			text-decoration: none;
+			display: inline-block;
+			padding: 10px 8px;
+			font-size: 16px;
+		}
+		.text-white{
+			color:white;
+		}
+		.bg-blue{
+			background: #51a7ac;
+		}
+		.bg-red{
+			background: #e8301d;
+		}
+		.bg-green{
+			background: #89b453;
+		}
+		.bg-yellow{
+			background: #f6c640;
+		}
+		.bg-orange{
+			background: #f07f30;
+		}
+		.heading{
+			background: white;
+			padding-top:50px;
+			padding-left:80px;
+			padding-right:80px;
+			padding-bottom:50px;
+		}
+		.heading-title{
+			font-family: 'Lucida Console';
+			color: #f0412f;
+			transform: scaleY(2);
+			font-size:60px;
+			margin:0px;
+		}
+		.heading-subtitle{
+			color: #787d80;
+			font-size:30px;
+			margin-top:30px;
+			margin-bottom:30px;
+		}
+		.heading-text{
+			font-size:20px;
+			color:#b6b6b6;
+			line-height:2;
+			margin:0px;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.title{
+			font-family: 'Courier New';
+			padding-top:20px;
+			padding-bottom:20px;
+			font-size:18px;
+			font-weight:bold;
+		}
+		.flex{
+			display:flex;
+		}
+		.column{
+			flex: 0 0 auto;
+			width: 20%;
+		}
+		.badge{
+			width:60px;
+			border-radius:50px;
+			padding:10px 0px;
+			box-shadow: 0px 2px 2px -1px black;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:25px;
+			margin-bottom:45px;
+		}
+		.badge > img{
+			width:40px;
+		}
+		.column-title{
+			color:#51a7ac;
+			margin-bottom:35px;
+			font-weight:bold;
+			text-shadow: 0px 1px 1px black;
+			font-size:18px;
+		}
+		.column-text{
+			padding:0px 25px 80px 25px;
+			font-size:18px;
+			list-style: 1.8;
+		}
+		.column:nth-of-type(1){
+			background: #a2d6d9;
+		}
+		.column:nth-of-type(2){
+			background: #f48871;
+		}
+		.column:nth-of-type(3){
+			background: #b9d694;
+		}
+		.column:nth-of-type(4){
+			background: #fae17c;
+		}
+		.column:nth-of-type(5){
+			background: #f6b56b;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="main">
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="" class="nav-link text-white bg-blue">File</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link text-white bg-red">Edit</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link text-white bg-green">View</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link text-white bg-yellow">Tools</a>
+				</li>
+				<li class="nav-item">
+					<a href="" class="nav-link text-white bg-orange">Help</a>
+				</li>
+			</ul>
+			<div class="heading text-center">
+				<h1 class="heading-title">
+					HTML AND CSS
+				</h1>
+				<h3 class="heading-subtitle">
+					< CHEAT SHEET >
+				</h3>
+				<p class="heading-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae eius tenetur vitae, eos quis omnis! Dicta, quisquam, repellendus provident distinctio dignissimos reiciendis voluptatem recusandae rem optio numquam dolorum consectetur.
+					distinctio dignissimos reiciendis voluptatem recusandae rem optio numquam dolorum consectetur.
+					distinctio digni
+				</p>
+			</div>
+			<div class="title text-white text-center">
+				A TITLE FOR BEGINNERS
+			</div>
+		</div>
+		<div class="flex">
+			<div class="column text-center">
+				<div class="bg-blue badge">
+					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+				</div>
+				<div class="column-title">
+					HTML
+				</div>
+				<div class="column-text text-white">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+				</div>
+			</div>
+			<div class="column text-center">
+				<div class="bg-blue badge">
+					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+				</div>
+				<div class="column-title">
+					HTML
+				</div>
+				<div class="column-text text-white">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+				</div>
+			</div>
+			<div class="column text-center">
+				<div class="bg-blue badge">
+					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+				</div>
+				<div class="column-title">
+					HTML
+				</div>
+				<div class="column-text text-white">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+				</div>
+			</div>
+			<div class="column text-center">
+				<div class="bg-blue badge">
+					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+				</div>
+				<div class="column-title">
+					HTML
+				</div>
+				<div class="column-text text-white">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+				</div>
+			</div>
+			<div class="column text-center">
+				<div class="bg-blue badge">
+					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+				</div>
+				<div class="column-title">
+					HTML
+				</div>
+				<div class="column-text text-white">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
