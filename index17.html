@@ -5,31 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+		*{
+			box-sizing: border-box;
+		}
 		.container{
 			width:1200px;
-			margin: 0 auto;
+			margin:0 auto;
 		}
-		.main{
+		.row-one{
 			background: black;
-			padding:33px 33px 0px 33px;
+			padding:32px 32px 0px 32px;
 		}
 		.nav{
-			margin: 0px;
 			background: #999999;
+			margin:0;
 			list-style-type: none;
-			padding: 6px;
+			padding:6px;
 		}
 		.nav-item{
-			display: inline-block;
+			display: inline-block; /* li-tata da sa edno do drugo */
+
 		}
 		.nav-link{
+			display: inline-block; /* linkovete da imat padding (obem) otgore i otdolu */
 			text-decoration: none;
-			display: inline-block;
-			padding: 10px 8px;
-			font-size: 16px;
-		}
-		.text-white{
-			color:white;
+			padding:8px 6px;
 		}
 		.bg-blue{
 			background: #51a7ac;
@@ -46,182 +46,190 @@
 		.bg-orange{
 			background: #f07f30;
 		}
-		.heading{
+		.text-white{
+			color:white;
+		}
+		.main{
 			background: white;
-			padding-top:50px;
-			padding-left:80px;
-			padding-right:80px;
-			padding-bottom:50px;
-		}
-		.heading-title{
-			font-family: 'Lucida Console';
-			color: #f0412f;
-			transform: scaleY(2);
-			font-size:60px;
-			margin:0px;
-		}
-		.heading-subtitle{
-			color: #787d80;
-			font-size:30px;
-			margin-top:30px;
-			margin-bottom:30px;
-		}
-		.heading-text{
-			font-size:20px;
-			color:#b6b6b6;
-			line-height:2;
-			margin:0px;
+			padding:35px 85px 45px 85px;
 		}
 		.text-center{
 			text-align: center;
 		}
-		.title{
-			font-family: 'Courier New';
+		.main-title{
+			margin:0;
+			font-size:60px;
+			color:#f0402d;
+			font-family: 'Lucida Console';
+			transform: scaleY(1.8);
+		}
+		.main-subtitle{
+			font-size:30px;
+			color: #877f81;
+		}
+		.main-text{
+			color:#b1aeae;
+			line-height: 1.8;
+			font-size:18px;
+		}
+		.extra-title{
+			font-family: 'Courier';
+			font-size:20px;
 			padding-top:20px;
 			padding-bottom:20px;
-			font-size:18px;
-			font-weight:bold;
+			font-weight: bold;
 		}
-		.flex{
-			display:flex;
+
+		.row-two{
+			display: flex;
 		}
 		.column{
-			flex: 0 0 auto;
+			flex:0 0 auto;
 			width: 20%;
+			padding:20px 20px 80px 20px;
 		}
 		.badge{
-			width:60px;
-			border-radius:50px;
-			padding:10px 0px;
-			box-shadow: 0px 2px 2px -1px black;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top:25px;
-			margin-bottom:45px;
+			padding-top:10px;
+			width:75px;
+			height:75px;
+			display:inline-block;
+			border-radius:32px;
+			box-shadow: 0px 1px 1px 1px black;
+
 		}
-		.badge > img{
-			width:40px;
+		.badge > img {
+			width:45px;
+			height:50px;
 		}
 		.column-title{
-			color:#51a7ac;
-			margin-bottom:35px;
-			font-weight:bold;
+			font-weight: bold;
+			padding-top:45px;
+			padding-bottom:30px;
+			font-size:20px;
 			text-shadow: 0px 1px 1px black;
-			font-size:18px;
+		}
+
+		.column:nth-of-type(1) .column-title{
+			color: #51a7ac;					
+		}
+		.column:nth-of-type(2) .column-title{
+			color: #e8301d;				
+		}	
+		.column:nth-of-type(3) .column-title{
+			color: #89b453;
+		}
+		.column:nth-of-type(4) .column-title{
+			color: #f6c640;
+		}
+		.column:nth-of-type(5) .column-title{
+			color: #f07f30;
 		}
 		.column-text{
-			padding:0px 25px 80px 25px;
 			font-size:18px;
-			list-style: 1.8;
+			letter-spacing: 1.5px;
 		}
-		.column:nth-of-type(1){
+		.bg-lightblue{
 			background: #a2d6d9;
 		}
-		.column:nth-of-type(2){
+		.bg-lightred{
 			background: #f48871;
 		}
-		.column:nth-of-type(3){
+		.bg-lightgreen{
 			background: #b9d694;
 		}
-		.column:nth-of-type(4){
+		.bg-lightyellow{
 			background: #fae17c;
 		}
-		.column:nth-of-type(5){
+		.bg-lightorange{
 			background: #f6b56b;
 		}
-	</style>
+	</style>	
 </head>
 <body>
 	<div class="container">
-		<div class="main">
+		<div class="row-one">
 			<ul class="nav">
 				<li class="nav-item">
-					<a href="" class="nav-link text-white bg-blue">File</a>
+					<a href="#" class="nav-link bg-blue text-white">File</a>
 				</li>
 				<li class="nav-item">
-					<a href="" class="nav-link text-white bg-red">Edit</a>
+					<a href="#" class="nav-link bg-red text-white">Edit</a>
 				</li>
 				<li class="nav-item">
-					<a href="" class="nav-link text-white bg-green">View</a>
+					<a href="#" class="nav-link bg-green text-white">View</a>
 				</li>
 				<li class="nav-item">
-					<a href="" class="nav-link text-white bg-yellow">Tools</a>
+					<a href="#" class="nav-link bg-yellow text-white">Tools</a>
 				</li>
 				<li class="nav-item">
-					<a href="" class="nav-link text-white bg-orange">Help</a>
+					<a href="#" class="nav-link bg-orange text-white">Help</a>
 				</li>
 			</ul>
-			<div class="heading text-center">
-				<h1 class="heading-title">
-					HTML AND CSS
-				</h1>
-				<h3 class="heading-subtitle">
-					< CHEAT SHEET >
-				</h3>
-				<p class="heading-text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae eius tenetur vitae, eos quis omnis! Dicta, quisquam, repellendus provident distinctio dignissimos reiciendis voluptatem recusandae rem optio numquam dolorum consectetur.
-					distinctio dignissimos reiciendis voluptatem recusandae rem optio numquam dolorum consectetur.
-					distinctio digni
-				</p>
+			<div class="main text-center">
+				<h1 class="main-title">HTML AND CSS</h1>
+				<h3 class="main-subtitle">< CHEAT SHEET ></h3>
+				<div class="main-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Totam repellendus minima, corporis voluptate enim magni deleniti dolor, doloremque quas tenetur? Accusamus doloremque aspernatur repudiandae deserunt rem magni, pariatur exercitationem. Reiciendis.Accusamus doloremque aspernatur repudiandae deserunt rem magni, pariatur exercitationem. Reiciendis.
+				</div>
 			</div>
-			<div class="title text-white text-center">
+			<div class="extra-title text-center text-white">
 				A TITLE FOR BEGINNERS
 			</div>
 		</div>
-		<div class="flex">
-			<div class="column text-center">
-				<div class="bg-blue badge">
+		<div class="row-two">
+			<div class="column bg-lightblue text-center">
+				<div class="badge bg-blue">
 					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
 				</div>
 				<div class="column-title">
 					HTML
 				</div>
 				<div class="column-text text-white">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam nihil earum debitis deleniti nulla alias dolorem amet porro hic vitae quas, ex perferendis omnis corrupti ut quidem doloribus tenetur.
 				</div>
 			</div>
-			<div class="column text-center">
-				<div class="bg-blue badge">
-					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+			<div class="column bg-lightred text-center">
+				<div class="badge bg-red">
+					<img src="https://static.thenounproject.com/png/3803708-200.png" alt="">
 				</div>
 				<div class="column-title">
-					HTML
+					CSS
 				</div>
 				<div class="column-text text-white">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam nihil earum debitis deleniti nulla alias dolorem amet porro hic vitae quas, ex perferendis omnis corrupti ut quidem doloribus tenetur.
 				</div>
 			</div>
-			<div class="column text-center">
-				<div class="bg-blue badge">
-					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+			<div class="column bg-lightgreen text-center">
+				<div class="badge bg-green">
+					<img src="https://static.thenounproject.com/png/3532081-200.png" alt="">
 				</div>
 				<div class="column-title">
-					HTML
+					TAGS
 				</div>
 				<div class="column-text text-white">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam nihil earum debitis deleniti nulla alias dolorem amet porro hic vitae quas, ex perferendis omnis corrupti ut quidem doloribus tenetur.
 				</div>
 			</div>
-			<div class="column text-center">
-				<div class="bg-blue badge">
-					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+			<div class="column bg-lightyellow text-center">
+				<div class="badge bg-yellow">
+					<img src="https://static.thenounproject.com/png/1489354-200.png" alt="">
 				</div>
 				<div class="column-title">
-					HTML
+					SNIPPETS
 				</div>
 				<div class="column-text text-white">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam nihil earum debitis deleniti nulla alias dolorem amet porro hic vitae quas, ex perferendis omnis corrupti ut quidem doloribus tenetur.
 				</div>
 			</div>
-			<div class="column text-center">
-				<div class="bg-blue badge">
-					<img src="https://static.thenounproject.com/png/89200-200.png" alt="">
+			<div class="column bg-lightorange text-center">
+				<div class="badge bg-orange">
+					<img src="https://static.thenounproject.com/png/1489354-200.png" alt="">
 				</div>
 				<div class="column-title">
-					HTML
+					HYPERLINKS
 				</div>
 				<div class="column-text text-white">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae eaque nesciunt dolorum nostrum, ullam, qui aspernatur possimus, natus facilis ipsam maxime, deleniti. Quidem dignissimos ducimus quisquam maiores repellendus odit!
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam nihil earum debitis deleniti nulla alias dolorem amet porro hic vitae quas, ex perferendis omnis corrupti ut quidem doloribus tenetur.
 				</div>
 			</div>
 		</div>
