@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.typekit.net/zpy8rod.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0px;
+			font-family: myriad-pro, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+		.menu{
+			background: #635240;
+			border-bottom: solid 12px #a56c97;
+		}
+		.container{
+			width: 954px;
+			margin: 0 auto;
+		}
+		.nav{
+			list-style-type: none;
+			padding:15px 0px 15px 18px;
+			margin: 0px;
+		}
+		.nav-item{
+			display:inline-block;
+			margin:0 10px;
+		}
+		.nav-link{
+			text-decoration: none;
+		}
+		.text-white{
+			color: white;
+		}
+		.main{
+			background: rgb(122,107,74);
+			background: linear-gradient(180deg, rgba(122,107,74,1) 0%, rgba(61,55,39,1) 36%, rgba(36,32,23,1) 36%, rgba(36,32,23,1) 100%);
+		}
+		.site-identity{
+			display: flex;
+			align-items: center;
+			padding-left: 6px;
+			padding-top: 21px;
+			padding-bottom: 28px;
+		}
+		.site-name{
+			font-size: 32px;
+			margin-left: 11px;
+		}
+		.bold{
+			font-weight: bold;
+		}
+		.slider{
+			background: #a56c97;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			margin:0px 2px;
+			justify-content: space-between;
+			padding:18px 0px;
+		}
+		.left-arrow{
+			margin:0px 9px;
+		}
+		.slider-link{
+			color: #6c4562;
+			text-decoration: none;
+		}
+		.slider-item{
+			width: 875px;
+		}
+		.slider-title{
+			font-size:25px;
+			color: #fee2b0;
+		}
+		.slider-meta{
+			border-top: solid 2px #784b72;
+			border-bottom: solid 2px #784b72;
+			margin: 10px 0px;
+			padding: 4px 0px;
+			font-size: 13px;
+		}
+		.slider-post{
+			font-family: 'Rockwell';
+		}
+		.right-arrow{
+			margin:0px 11px;
+		}
+
+		.blog{
+			background: #201b15;
+			border: solid 2px #3e0d2b;
+			padding: 29px 25px;
+			margin-top: 24px;
+		}
+		.row{
+			display:flex;
+		}
+		.articles{
+			margin-right: 55px;
+			width: 265px;
+		}
+		.articles-title{
+			color: #fce5af;
+			font-size: 17px;
+			padding-left: 4px;
+		}
+		.article-item{
+			margin-bottom: 15px;
+		}
+		.article-item-title{
+			font-size: 14px;
+			color: #74555b;
+		}
+		.articles-item-meta{
+			font-size: 10px;
+			color: #513241;
+			border-top: solid 1px #422239;
+			border-bottom: solid 1px #422239;
+			padding:3px 0px;
+			margin: 5px 0px;
+		}
+		.articles-item-body{
+			display: flex;
+		}
+		.articles-item-thumbnail{
+			border: solid 2px #3e0d2b;
+			margin-right: 10px;
+		}
+		.article-item-post{
+			color: #a78c95;
+			width: 175px;
+			height: 80px;
+			/*text-overflow: clip;*/
+			text-overflow: ellipsis;
+			overflow: hidden;
+			/*white-space: nowrap;*/
+
+		}
+
+	</style>	
+</head>
+<body>
+	<div class="menu"> <!-- клас меню за да сложим кафяв фон от край до край 100% width-->
+		<div class="container"> <!-- стандартен клас за позициониране на съдържание централно с width: и margin:0 auto -->
+			<ul class="nav"> 
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">about</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">contact</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">quote</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">product</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white">testimonials</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="site-identity">
+				<img src="https://placehold.co/80x50" alt="">
+				<div class="site-name text-white bold">
+					ИУ - ВАРНА
+				</div>
+			</div>
+			<div class="slider">
+				<div class="left-arrow">
+					<a href="#" class="slider-link">&#9664;</a>
+				</div>
+				<div class="slider-item">
+					<div class="slider-title">
+						Maecenas scelerisque fermentum metus
+					</div>
+					<div class="slider-meta bold">
+						Posted by admin in on 09 30th, 2018| 2 Comments
+					</div>
+					<div class="slider-post text-white">
+						Pellentesque lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iure veniam eaque quam enim, laboriosam nesciunt eius qui voluptatibus non, accusamus blanditiis autem excepturi quasi impedit, temporibus doloremque doloribus harum!
+					</div>
+				</div>
+				<div class="right-arrow">
+					<a href="#" class="slider-link">&#9654;</a>
+				</div>
+			</div>
+
+			<div class="blog">
+				<div class="row">
+					<div class="articles">
+						<div class="articles-title">
+							POPULAR ARTICLES
+						</div>
+						<div class="article-item">
+							<div class="article-item-title">
+								Maecenas scelerisque fermentum
+							</div>
+							<div class="articles-item-meta">
+								Posted by admin in on 09 30th, 2018| 2 Comments
+							</div>
+							<div class="articles-item-body">
+								<img src="https://placehold.co/80x80" alt="" class="articles-item-thumbnail">
+								<div class="article-item-post">
+									Sed sollicitudin lorem ipsum dolor sit amet, consectetur, adipisicing elit. Similique dolores, maiores qui dolor dicta quas, fugiat doloribus eveniet reiciendis officia aut eos illum natus minima quos nesciunt, placeat laborum laudantium!
+								</div>
+							</div>
+						</div>
+						<div class="article-item">
+							<div class="article-item-title">
+								Maecenas scelerisque fermentum
+							</div>
+							<div class="articles-item-meta">
+								Posted by admin in on 09 30th, 2018| 2 Comments
+							</div>
+							<div class="articles-item-body">
+								<img src="https://placehold.co/80x80" alt="" class="articles-item-thumbnail">
+								<div class="article-item-post">
+									Sed sollicitudin lorem ipsum dolor sit amet, consectetur, adipisicing elit. Similique dolores, maiores qui dolor dicta quas, fugiat doloribus eveniet reiciendis officia aut eos illum natus minima quos nesciunt, placeat laborum laudantium!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
