@@ -10,173 +10,416 @@
 			box-sizing: border-box;
 		}
 		.container{
-			width:1200px;
+			width:1170px;
 			margin:0 auto;
 		}
-		.header{
+		.navbar{
 			display: flex;
-			padding-left:30px;
+			padding-top:17px;
 		}
-		.logo{
-
+		.col-img{
+			flex: 0 0 auto;
+			padding:0px 30px 0px 35px;
+		}
+		.col-nav{
+			flex:0 0 auto;
 		}
 		.nav{
-			padding-left: 30px;
-			display: flex;
+			display:flex;
+			margin:0px;
+			padding:0px;
 			list-style-type: none;
 		}
 		.nav-item{
-			margin: 0 3px;
-			border-bottom: solid 3px #770000;
-			box-shadow: 0px 8px 6px -6px black;
-			text-align: center;
-			padding-bottom:13px;
-		}
-		.nav-item:nth-of-type(1){
-			width: 58px;
-		}
-		.nav-item:nth-of-type(2){
-			width: 76px;
-		}
-		.nav-item:nth-of-type(3){
-			width: 116px;
-		}
-		.nav-item:nth-of-type(4){
-			width: 126px;
-		}
-		.nav-item:nth-of-type(5){
-			width: 126px;
-		}
-		.nav-item:nth-of-type(6){
-			width: 106px;
-		}
-		.nav-item:nth-of-type(7){
-			width: 70px;
+			flex: 0 0 auto;
+			border-bottom:solid 2px #770000;
+			box-shadow:0px 8px 6px -6px black;
+			margin-right:5px;
 		}
 		.nav-link{
-			text-transform: uppercase;
-			color: black;
+			color:black;
+			font-weight: bold;
+			display: inline-block;
+			font-size:14px;
+			padding-bottom:12px;
+			text-align:center;
 			text-decoration: none;
 			font-family: Arial;
-			font-weight: bold;
-			font-size: 12px;
 		}
-		.nav-link:hover, .active{
-			color: #770000;
+		.nav-item:nth-of-type(1) > .nav-link{
+			width:55px;
 		}
+		.nav-item:nth-of-type(2) > .nav-link{
+			width:75px;
+		}
+		.nav-item:nth-of-type(3) > .nav-link{
+			width:115px;
+		}
+		.nav-item:nth-of-type(4) > .nav-link{
+			width:126px;
+		}
+		.nav-item:nth-of-type(5) > .nav-link{
+			width:126px;
+		}
+		.nav-item:nth-of-type(6) > .nav-link{
+			width:105px;
+		}
+		.nav-item:nth-of-type(7) > .nav-link{
+			width:70px;
+		}
+		.active, .nav-link:hover{
+			color:#770000;
+		}
+
 		.main{
-			display:flex;
-		}
-		
-		.middle-column{
-			width: 750px;
-			border: 2px solid #DADADA;
-			margin-left:15px;
-			margin-right: 15px;
-			border-radius: 3px;
-			padding: 10px;
-			font-family: 'Open Sans';
-			font-size:14px;
-		}
-		.row{
-			margin-bottom: 35px;
 			display: flex;
-			flex-wrap: wrap;
+			margin-top:40px;
+			align-items: flex-start;
 		}
-		.author{
-			flex: 0 0 250px;
-			width: 250px;
+
+		.left-col{
+			flex: 0 0 195px;
+			background: #DADADA;
+			padding:10px 15px 20px 15px;
+			text-align: center;
 		}
-		.title{
-			flex: 0 0 476px;
-			width: 476px;
+		.img-border{
+			border:solid 3px black;
 		}
-		.download-link{
-			flex: 0 0 135px;
-			width: 135px;
+		.text-sm{
+			font-size:11.9px;
+		}
+		.bold{
 			font-weight: bold;
+		}
+		.issn{
+			font-family: Arial;
+			margin-top:5px;
+			margin-bottom:7px;
+		}
+		.current-issue{
+			margin-top:23px;
+		}
+		.text-red{
+			color:#770000;
 			text-decoration: none;
 		}
-		.left-column{
-			width:192px;
-			background: #DADADA;
-			text-align:center;
-			padding-top:10px;
-		}
-		.right-column{
-			width:192px;
+		.publish{
 			background: #F4F4F4;
-			text-align:center;
-			padding-top:10px;
+			padding:17px 1px;
+			margin-bottom:5px;
 		}
-		.issue-poster, .university-logo{
-			border:solid 4px black;
+		.text-black{
+			color:black;
+			text-decoration: none;
 		}
-	</style>	
+
+		.text-gray{
+			color:#656565;
+			text-decoration: none;
+		}
+		.issue-list{
+			list-style-type: none;
+			margin:20px 0px;
+			border-top:1px solid #DADADA;
+			padding:0px;
+		}
+		.mid-col{
+			font-family: 'Open Sans';
+			padding:10px 18px 0px 13px;
+			border:solid 3px #F4F4F4;
+			border-radius:3px;
+			width:740px;
+			margin-left:15px;
+			margin-right:15px;
+		}
+		.pub-row{
+			color:#656565;
+			margin-bottom:40px;
+			font-size:14px;
+		}
+		.pub-data{
+			display: flex;
+		}
+		.pub-authors{
+			width:220px;
+			flex: 0 0 auto;
+			margin-right:30px;
+		}
+		.pub-title{
+			flex: 0 0 auto;
+			width: 465px;
+		}
+		.right-col{
+			background: #f4f4f4;
+			padding:10px 15px 25px 15px;
+			/*padding-top:10px;
+			padding-right:15px;
+			padding-bottom: 0px;
+			padding-left:15px;*/
+			font-family: Arial;
+		}
+
+		.search-title{
+			text-align: center;
+			margin-top: 40px;
+			font-size: 14px;
+		}
+		.search-list{
+			margin-top:25px;
+			margin-bottom:50px;
+		}
+		.search-item{
+			margin-bottom: 10px;
+			font-size:11.2px;
+		}
+		.contact-title{
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+		.contact-main{
+			color:#656565;
+			font-size:14px;
+		}
+		.contact-line{
+			color:#656565;
+			font-size:12px;
+			line-height: 1.6;
+		}
+		.contact-person{
+			margin-top:30px;
+			line-height:1.9;
+			font-size:14px;
+			color:#656565;
+		}
+		.contact-info{
+			/*margin-top:10px;*/
+			font-size:11.9px;
+			line-height:1.8;
+			color:#656565;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="header">
-			<img src="https://placehold.co/253x63" alt="" class="logo">
-			<ul class="nav">
-				<li class="nav-item"><a href="#" class="nav-link">Начало</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Цели и обхват</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Редакционна колегия</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Указания към авторите</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Указания към рецензентите</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Етична политика</a></li>
-				<li class="nav-item"><a href="#" class="nav-link active">Архив</a></li>
-			</ul>
+		<div class="navbar">
+			<div class="col-img">
+				<img src="https://placehold.co/253x63" alt="" class="img">
+			</div>
+			<div class="col-nav">
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="#" class="nav-link">НАЧАЛО</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">ЦЕЛИ И ОБХВАТ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">РЕАКЦИОННА КОЛЕГИЯ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">УКАЗАНИЯ КЪМ АВТОРИТЕ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">УКАЗАНИЯ КЪМ РЕЦЕНЗЕНТИТЕ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">ЕТИЧНА ПОЛИТИКА</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">АРХИВ</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="main">
-			<div class="left-column">
-				<img src="https://placehold.co/164x230" alt="" class="issue-poster">
-			</div>
-			<div class="middle-column">
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+			<div class="left-col">
+				<img src="https://placehold.co/164x230" alt="" class="img-border">
+				<div class="text-sm bold issn text-gray">
+					ISSN 1310-0343 - печатно
 				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+				<div class="text-sm bold issn text-gray">
+					ISSN 1310-0343 - печатно
 				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+				<div class="current-issue">
+					<a href="#" class="bold text-red">Текущо издание</a>
 				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+				<div class="publish">
+					<a href="#" class="text-lg bold text-gray">Издание 2019</a>
+					<ul class="issue-list">
+						<li><a href="#" class="bold text-red">бр. 4/2019 г.</a></li>
+						<li><a href="#" class="bold text-red">бр. 3/2019 г.</a></li>
+						<li><a href="#" class="bold text-red">бр. 2/2019 г.</a></li>
+						<li><a href="#" class="bold text-red">бр. 1/2019 г.</a></li>
+					</ul>
 				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+				<div class="publish">
+					<a href="#" class="text-lg bold text-gray">Издание 2018</a>
 				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+				<div class="publish">
+					<a href="#" class="text-lg bold text-gray">Издание 2017</a>
 				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
-				</div>
-				<div class="row">
-					<div class="author">Мария Станимирова Токушева</div>
-					<div class="title">Модел за определяне на оптимална производствена програма</div>
-					<a href="#" class="active download-link">Изтегли статията</a>
+				<div class="publish">
+					<a href="#" class="text-lg bold text-gray">Издание 2016</a>
 				</div>
 			</div>
-			<div class="right-column">
-				<img src="https://placehold.co/161x161" alt="" class="university-logo">
+			<div class="mid-col">
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+				<div class="pub-row">
+					<div class="pub-data">
+						<div class="pub-authors">
+							Андрияна Андреева, Андрей Александров
+						</div>
+						<div class="pub-title">
+							Банковият персонал - фактор за клиентска миграция в дребното банкиране
+						</div>
+					</div>
+					<div class="pub-dl">
+						<a href="#" class="text-red bold">Изтегли статия</a>
+					</div>
+				</div>
+			</div>
+			<div class="right-col">
+				<img src="https://placehold.co/161x161" alt="" class="img-border">
+				<div class="bold text-black search-title">
+					Търси статии:
+				</div>
+				<ul class="search-list">
+					<li class="search-item">
+						<a href="" class="text-red">по година</a>
+					</li>
+					<li class="search-item">
+						<a href="" class="text-red">по заглавие</a>
+					</li>
+					<li class="search-item">
+						<a href="" class="text-red">по автор</a>
+					</li>
+				</ul>
+				<div class="bold text-black contact-title">
+					Контакти
+				</div>
+				<div class="contact-main bold text-black">
+					Икономически университет - Варна
+				</div>
+				<div class="contact-line">
+					бул. "Княз Борис I" № 77
+				</div>
+				<div class="contact-line">
+					9002 - гр. Варна, България
+				</div>
 
+				<div class="contact-person bold text-black">
+					Росица Заркова - <br>
+					технически секретар
+				</div>
+				<div class="contact-info">
+					&#9990; 0882 164 848 <br>
+					&#9993; sp.Izvestiya@ue-varna.bg
+				</div>
 			</div>
 		</div>
 	</div>
