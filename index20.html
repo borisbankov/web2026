@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1></h1>
+	<input type="button" id="up" value="Моето число е по-малко">
+	<input type="button" id="down" value="Моето число е по-голямо">
+	<script>
+		
+		let task8 = () => {
+			let heading = document.querySelector('h1');
+			let up = document.querySelector('#up');
+			let down = document.querySelector('#down');
+			let min = 1;
+			let max = 1000;
+			let rnd = 0;
+			rnd = Math.floor(Math.random()*(max - min + 1) + min);
+			heading.innerText = rnd;
+
+			up.addEventListener('click', () => {
+				
+				max = rnd - 1;
+				rnd = Math.floor(Math.random()*(max - min + 1) + min);
+				heading.innerText = rnd;
+				console.log(min, "e min", max, "e max");
+				
+			});
+
+			down.addEventListener('click', () => {
+							
+				min = rnd + 1;
+				rnd = Math.floor(Math.random()*(max - min + 1) + min);
+				heading.innerText = rnd;
+				console.log(min, "e min", max, "e max");
+				
+			});
+		}
+
+		task8();
+
+		let task1 = () => {
+			for (let i = 0; i <= 10; i++) {
+				console.log(i);
+			}
+		}
+
+		// task1();
+
+		let task2 = () => {
+			let result = '';
+			for (let i = 10; i >= 0; i--) {
+				result = result + i + ' ';
+			}
+
+			console.log(result);
+			// console.log([...Array(11).keys()].reverse().join(' '));
+		}
+
+		// task2();
+
+
+		let task3 = () => {
+			let word1 = prompt('enter word1');
+			let word2 = prompt('enter word2');
+
+			if(word1.length > word2.length){
+				console.log('dumata ' + word1 + ' e po-dylga');
+			} else if(word1.length < word2.length){
+				console.log(`dumata ${word2} e po-dylga`); 
+			} else {
+				console.log("dumite", word1, "i", word2, "sa ednakvo dylgi");
+			}
+		}
+		// task3();
+
+		let task4 = () => {
+			let n = prompt('enter number');
+			let temp = 0;
+			// while(n > 0){ // 12345
+			// 	temp = n % 10; // 5 4 3 2 1
+			// 	n = parseInt(n / 10); // 1234 123 12 1 0  
+			// 	console.log(temp);
+			// }
+
+			for (let i = 0; i < n.length; i++) {
+				console.log(n[i]);
+			}
+		}
+
+		// task4();
+
+		// let task5 = () => { 
+		// 	let n = prompt('enter number');
+
+		// 	for (let i = 1; i < n; i = i * 2) {
+		// 		 console.log(i);
+		// 	}
+		// }
+
+		// task5();
+
+		let task6 = () => { 
+			let n = prompt('enter number'); // 1, 2, 3, 4
+			let sum = 0;
+			n = n.split(', '); // string split -> masiv
+			// masiv join -> string
+			for (let i = 0; i < n.length; i++) {
+				sum = sum + parseInt(n[i]);
+			}
+			console.log(sum);
+		}
+
+		// task6();
+
+		let task7 = () => { 
+			let n = prompt('enter number'); // 1, 2, 3, 4
+			n = n.split(' '); // string split -> masiv
+			h = parseInt(n[0]); // viso4ina
+			climbUpSpeed = parseInt(n[1]); // skorost nagore
+			climbDownSpeed = parseInt(n[2]); // skorost nadolu
+			days = 1; // izminali dni
+			alreadyClimbed = climbUpSpeed; // ve4e izka4eno
+			
+			while(alreadyClimbed < h) {
+				days++;
+				alreadyClimbed = alreadyClimbed - climbDownSpeed + climbUpSpeed;
+			}
+			console.log(days);
+		}
+
+		// task7();
+	</script>
+</body>
+</html>
